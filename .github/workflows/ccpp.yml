@@ -20,8 +20,8 @@ jobs:
     - uses: actions/upload-artifact@v1
       with:
          name: faketime_ld
-         path: build/faketime_ld
+         path: faketime_ld
     - uses: actions/upload-artifact@v1
       with:
          name: date
-         path: build/date
+         path: date

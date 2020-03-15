@@ -17,3 +17,11 @@ jobs:
       run: ./build.sh
     - name: check
       run: ./faketime_ld 21137400 ./date
+    - uses: actions/upload-artifact@v1
+      with:
+         name: faketime_ld
+         path: build/faketime_ld
+    - uses: actions/upload-artifact@v1
+      with:
+         name: date
+         path: build/date
